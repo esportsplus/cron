@@ -1,0 +1,21 @@
+{
+    "author": "ICJR",
+    "dependencies": {
+        "cron": "^4.3.1"
+    },
+    "devDependencies": {
+        "@esportsplus/typescript": "^0.8.11"
+    },
+    "main": "build/index.js",
+    "name": "@esportsplus/cron",
+    "private": false,
+    "scripts": {
+        "build": "tsc && tsc-alias",
+        "-": "-",
+        "prepare": "pnpm build",
+        "prepublishOnly": "pnpm build"
+    },
+    "type": "module",
+    "types": "build/index.d.ts",
+    "version": "0.0.1"
+}
