@@ -11,7 +11,7 @@ export default (factory: (field: string) => Store) => {
     let store = factory('@esportsplus/server/cron.lock');
 
     return {
-        debounce: (key: string, fn: VoidFunction, timeout?: number) => {
+        debounce: (key: string, fn: (() => Promise<void> | void), timeout?: number) => {
             let run = async () => {
                     let { running, updatedAt } = (await store.get<{ running: boolean, updatedAt: number }>(key)) || {
                             running: false,
