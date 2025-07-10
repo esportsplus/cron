@@ -31,8 +31,6 @@ export default (factory: (field: string) => Store) => {
                 setTimeout(run, Math.floor(Math.random() * (TIMEOUT_MAX - TIMEOUT_MIN)) + TIMEOUT_MIN)
             };
         },
-        schedule: (
-            (...args: ConstructorParameters<typeof CronJob>) => new CronJob(...args)
-        ) as (...args: ConstructorParameters<typeof CronJob>) => CronJob
+        schedule: (args: Parameters<typeof CronJob.from>[0]) => CronJob.from(args)
     };
 };
