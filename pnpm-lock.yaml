@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       cron:
-        specifier: ^4.3.3
-        version: 4.3.3
+        specifier: ^4.3.4
+        version: 4.3.4
     devDependencies:
       '@esportsplus/typescript':
         specifier: ^0.9.2
@@ -64,8 +64,8 @@ packages:
     resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
     engines: {node: ^12.20.0 || >=14}
 
-  cron@4.3.3:
-    resolution: {integrity: sha512-B/CJj5yL3sjtlun6RtYHvoSB26EmQ2NUmhq9ZiJSyKIM4K/fqfh9aelDFlIayD2YMeFZqWLi9hHV+c+pq2Djkw==}
+  cron@4.3.4:
+    resolution: {integrity: sha512-OiO0l73MGhQOZQCjYZ0v7r8yFWpBOWteemwR1RIxiHtfVsIOwiTJZDvg7GmKzggkwC0RO8tI3P1QYBUCIZNYRQ==}
     engines: {node: '>=18.x'}
 
   dir-glob@3.0.1:
@@ -119,8 +119,8 @@ packages:
     resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
     engines: {node: '>=0.12.0'}
 
-  luxon@3.7.1:
-    resolution: {integrity: sha512-RkRWjA926cTvz5rAb1BqyWkKbbjzCGchDUIKMCUvNi17j6f6j8uHGDV82Aqcqtzd+icoYpELmG3ksgGiFNNcNg==}
+  luxon@3.7.2:
+    resolution: {integrity: sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==}
     engines: {node: '>=12'}
 
   merge2@1.4.1:
@@ -241,10 +241,10 @@ snapshots:
 
   commander@9.5.0: {}
 
-  cron@4.3.3:
+  cron@4.3.4:
     dependencies:
       '@types/luxon': 3.7.1
-      luxon: 3.7.1
+      luxon: 3.7.2
 
   dir-glob@3.0.1:
     dependencies:
@@ -300,7 +300,7 @@ snapshots:
 
   is-number@7.0.0: {}
 
-  luxon@3.7.1: {}
+  luxon@3.7.2: {}
 
   merge2@1.4.1: {}
 
