@@ -9,21 +9,24 @@ importers:
   .:
     dependencies:
       cron:
-        specifier: ^4.3.5
-        version: 4.3.5
+        specifier: ^4.4.0
+        version: 4.4.0
     devDependencies:
       '@esportsplus/typescript':
-        specifier: ^0.9.2
-        version: 0.9.2
+        specifier: ^0.29.1
+        version: 0.29.1
 
 packages:
 
-  '@esportsplus/cli-passthrough@0.0.10':
-    resolution: {integrity: sha512-/DcLjDxIB9NponyFtMQ3ICCXUA/hH1hp4FaL6AOepG1TwvY8g9y1MVLM71Coq7e0NpxUZt1pg73z6KSrh3Xd0w==}
+  '@esportsplus/cli-passthrough@0.0.15':
+    resolution: {integrity: sha512-HOO2MAJ2KcHRMND9Obo9/CRdsgud4e3sqggj1d0xuD4XQMzBW02yF/c1bV6BAMR1o2PDaEdoufL/dkLVyuiD2g==}
 
-  '@esportsplus/typescript@0.9.2':
-    resolution: {integrity: sha512-7CLlWVhCbkEW3EodOk+zE0xMAFeyVs+EjYr3/H5mY+im1O+o6ig5RpY3TNWabUkEBW14Jo8TBoHQAsPJH6CnuQ==}
+  '@esportsplus/typescript@0.29.1':
+    resolution: {integrity: sha512-TLTlbz/28zmkXiB3NIl5tXVnm6JckUvQ+Mc2ityZQzM4GTaZ9zOEsno/1xAqkSOtR8Ym+NLs9WZ8pTnNatIh/w==}
     hasBin: true
+
+  '@esportsplus/utilities@0.27.3':
+    resolution: {integrity: sha512-r+ptVNtITjiRwxG/WOkPzCNxux23QVAMj7PLH+LTJxgNN7VCnBl2E3z9S+XkSgoz9L3ebgE5EVD8439p6XwBoQ==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -39,6 +42,9 @@ packages:
 
   '@types/luxon@3.7.1':
     resolution: {integrity: sha512-H3iskjFIAn5SlJU7OuxUmTEpebK6TKB8rxZShDslBMZJ5u9S//KM1sbdAisiSrqwLQncVjnpi2OK2J51h+4lsg==}
+
+  '@types/node@25.6.0':
+    resolution: {integrity: sha512-+qIYRKdNYJwY3vRCZMdJbPLJAtGjQBudzZzdzwQYkEPQd+PJGixUL5QfvCLDaULoLv+RhT3LDkwEfKaAkgSmNQ==}
 
   anymatch@3.1.3:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
@@ -64,8 +70,8 @@ packages:
     resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
     engines: {node: ^12.20.0 || >=14}
 
-  cron@4.3.5:
-    resolution: {integrity: sha512-hKPP7fq1+OfyCqoePkKfVq7tNAdFwiQORr4lZUHwrf0tebC65fYEeWgOrXOL6prn1/fegGOdTfrM6e34PJfksg==}
+  cron@4.4.0:
+    resolution: {integrity: sha512-fkdfq+b+AHI4cKdhZlppHveI/mgz2qpiYxcm+t5E5TsxX7QrLS1VE0+7GENEk9z0EeGPcpSciGv6ez24duWhwQ==}
     engines: {node: '>=18.x'}
 
   dir-glob@3.0.1:
@@ -185,20 +191,27 @@ packages:
     engines: {node: '>=16.20.2'}
     hasBin: true
 
-  typescript@5.8.3:
-    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+  typescript@6.0.2:
+    resolution: {integrity: sha512-bGdAIrZ0wiGDo5l8c++HWtbaNCWTS4UTv7RaTH/ThVIgjkveJt83m74bBHMJkuCbslY8ixgLBVZJIOiQlQTjfQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
+  undici-types@7.19.2:
+    resolution: {integrity: sha512-qYVnV5OEm2AW8cJMCpdV20CDyaN3g0AjDlOGf1OW4iaDEx8MwdtChUp4zu4H0VP3nDRF/8RKWH+IPp9uW0YGZg==}
+
 snapshots:
 
-  '@esportsplus/cli-passthrough@0.0.10': {}
+  '@esportsplus/cli-passthrough@0.0.15': {}
 
-  '@esportsplus/typescript@0.9.2':
+  '@esportsplus/typescript@0.29.1':
     dependencies:
-      '@esportsplus/cli-passthrough': 0.0.10
+      '@esportsplus/cli-passthrough': 0.0.15
+      '@esportsplus/utilities': 0.27.3
+      '@types/node': 25.6.0
       tsc-alias: 1.8.16
-      typescript: 5.8.3
+      typescript: 6.0.2
+
+  '@esportsplus/utilities@0.27.3': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -213,6 +226,10 @@ snapshots:
       fastq: 1.19.1
 
   '@types/luxon@3.7.1': {}
+
+  '@types/node@25.6.0':
+    dependencies:
+      undici-types: 7.19.2
 
   anymatch@3.1.3:
     dependencies:
@@ -241,7 +258,7 @@ snapshots:
 
   commander@9.5.0: {}
 
-  cron@4.3.5:
+  cron@4.4.0:
     dependencies:
       '@types/luxon': 3.7.1
       luxon: 3.7.2
@@ -353,4 +370,6 @@ snapshots:
       normalize-path: 3.0.0
       plimit-lit: 1.6.1
 
-  typescript@5.8.3: {}
+  typescript@6.0.2: {}
+
+  undici-types@7.19.2: {}
