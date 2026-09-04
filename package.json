@@ -15,9 +15,7 @@
         "url": "https://github.com/esportsplus/cron"
     },
     "scripts": {
-        "build": "tsc && tsc-alias",
-        "-": "-",
-        "prepare": "pnpm build",
+        "build": "tsc -p tsconfig.build.json",
         "prepublishOnly": "pnpm build"
     },
     "type": "module",
