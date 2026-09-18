@@ -4,7 +4,7 @@
         "cron": "^4.4.0"
     },
     "devDependencies": {
-        "@esportsplus/typescript": "^0.34.1",
+        "@esportsplus/typescript": "^0.34.4",
         "@types/node": "^26.4.1"
     },
     "main": "build/index.js",
